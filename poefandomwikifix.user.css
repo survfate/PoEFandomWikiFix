@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           PoEFandomWikiFix
+@namespace      github.com/survfate
+@version        0.1.0
+@description    A style fix for pathofexile.fandom.com, including ads blocking
+@author         survfate (/u/survfate)
+@preprocessor   stylus
+@license        MIT
+==/UserStyle== */
+@-moz-document domain("pathofexile.fandom.com")
+{
+    /* Remove Ads */
+    .site-pathofexile-fandom .top-ads-container,
+    .site-pathofexile-fandom .ad-slot-placeholder,
+    .site-pathofexile-fandom .mcf-wrapper,
+    .site-pathofexile-fandom .page__right-rail,
+    .mw-parser-output #ds_cpp
+    {
+        display: none !important;
+    }
+}
